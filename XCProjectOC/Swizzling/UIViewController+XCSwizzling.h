@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UIViewController+XCSwizzling.h
 //  XCProjectOC
 //
 //  Created by xiaochen on 2018/3/19.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface UIViewController (XCSwizzling)
 
 @end
-

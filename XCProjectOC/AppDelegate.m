@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "XCHomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    _window.rootViewController = [[XCHomeViewController alloc] init];
+    [_window makeKeyAndVisible];
+    
     return YES;
 }
 

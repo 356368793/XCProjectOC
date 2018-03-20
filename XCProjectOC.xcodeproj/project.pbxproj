@@ -9,13 +9,23 @@
 /* Begin PBXBuildFile section */
 		003B6926DF24D84251DC8663 /* libPods-XCProjectOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD15F60BF4C3EF2E296E4DD /* libPods-XCProjectOC.a */; };
 		569E2878205F568C00B0D01C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E2877205F568C00B0D01C /* AppDelegate.m */; };
-		569E287B205F568C00B0D01C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E287A205F568C00B0D01C /* ViewController.m */; };
 		569E287E205F568C00B0D01C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 569E287C205F568C00B0D01C /* Main.storyboard */; };
 		569E2880205F568C00B0D01C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 569E287F205F568C00B0D01C /* Assets.xcassets */; };
 		569E2883205F568C00B0D01C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 569E2881205F568C00B0D01C /* LaunchScreen.storyboard */; };
 		569E2886205F568C00B0D01C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E2885205F568C00B0D01C /* main.m */; };
 		569E2890205F568C00B0D01C /* XCProjectOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E288F205F568C00B0D01C /* XCProjectOCTests.m */; };
 		569E289B205F568C00B0D01C /* XCProjectOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E289A205F568C00B0D01C /* XCProjectOCUITests.m */; };
+		569E28B5205FE0EF00B0D01C /* XCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E28B4205FE0EF00B0D01C /* XCBaseViewController.m */; };
+		569E28B8205FE10D00B0D01C /* XCBaseNacigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E28B7205FE10D00B0D01C /* XCBaseNacigationController.m */; };
+		569E28BB205FE12300B0D01C /* XCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E28BA205FE12300B0D01C /* XCHomeViewController.m */; };
+		569E28C5205FE6D700B0D01C /* XCDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E28C4205FE6D700B0D01C /* XCDevice.m */; };
+		569E28C9205FEAEE00B0D01C /* UIColor+XCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E28C8205FEAEE00B0D01C /* UIColor+XCExtension.m */; };
+		569E28CD205FEB9C00B0D01C /* NSString+XCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E28CC205FEB9C00B0D01C /* NSString+XCExtension.m */; };
+		569E28D0205FEBEB00B0D01C /* UIViewController+XCBackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E28CF205FEBEB00B0D01C /* UIViewController+XCBackButtonHandler.m */; };
+		569E28D5205FEE5F00B0D01C /* UIViewController+XCSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E28D4205FEE5F00B0D01C /* UIViewController+XCSwizzling.m */; };
+		569E28D8205FF1A800B0D01C /* UIImage+XCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E28D7205FF1A800B0D01C /* UIImage+XCExtension.m */; };
+		569E28DB20609FE100B0D01C /* UINavigationBar+XCSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E28DA20609FE100B0D01C /* UINavigationBar+XCSwizzling.m */; };
+		569E28DE2060A22E00B0D01C /* UIView+XCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E28DD2060A22E00B0D01C /* UIView+XCExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +50,6 @@
 		569E2873205F568C00B0D01C /* XCProjectOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCProjectOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		569E2876205F568C00B0D01C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		569E2877205F568C00B0D01C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		569E2879205F568C00B0D01C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		569E287A205F568C00B0D01C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		569E287D205F568C00B0D01C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		569E287F205F568C00B0D01C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		569E2882205F568C00B0D01C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +61,35 @@
 		569E2896205F568C00B0D01C /* XCProjectOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCProjectOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		569E289A205F568C00B0D01C /* XCProjectOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCProjectOCUITests.m; sourceTree = "<group>"; };
 		569E289C205F568C00B0D01C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		569E28B3205FE0EF00B0D01C /* XCBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCBaseViewController.h; sourceTree = "<group>"; };
+		569E28B4205FE0EF00B0D01C /* XCBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCBaseViewController.m; sourceTree = "<group>"; };
+		569E28B6205FE10D00B0D01C /* XCBaseNacigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCBaseNacigationController.h; sourceTree = "<group>"; };
+		569E28B7205FE10D00B0D01C /* XCBaseNacigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCBaseNacigationController.m; sourceTree = "<group>"; };
+		569E28B9205FE12300B0D01C /* XCHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCHomeViewController.h; sourceTree = "<group>"; };
+		569E28BA205FE12300B0D01C /* XCHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCHomeViewController.m; sourceTree = "<group>"; };
+		569E28BD205FE18C00B0D01C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		569E28BE205FE21700B0D01C /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
+		569E28C3205FE6D700B0D01C /* XCDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCDevice.h; sourceTree = "<group>"; };
+		569E28C4205FE6D700B0D01C /* XCDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCDevice.m; sourceTree = "<group>"; };
+		569E28C6205FE73000B0D01C /* GlobalUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalUtils.h; sourceTree = "<group>"; };
+		569E28C7205FEAEE00B0D01C /* UIColor+XCExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+XCExtension.h"; sourceTree = "<group>"; };
+		569E28C8205FEAEE00B0D01C /* UIColor+XCExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+XCExtension.m"; sourceTree = "<group>"; };
+		569E28CA205FEB0900B0D01C /* GlobalCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalCategories.h; sourceTree = "<group>"; };
+		569E28CB205FEB9C00B0D01C /* NSString+XCExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+XCExtension.h"; sourceTree = "<group>"; };
+		569E28CC205FEB9C00B0D01C /* NSString+XCExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+XCExtension.m"; sourceTree = "<group>"; };
+		569E28CE205FEBEB00B0D01C /* UIViewController+XCBackButtonHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XCBackButtonHandler.h"; sourceTree = "<group>"; };
+		569E28CF205FEBEB00B0D01C /* UIViewController+XCBackButtonHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XCBackButtonHandler.m"; sourceTree = "<group>"; };
+		569E28D2205FECE900B0D01C /* SwizzlingDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwizzlingDefine.h; sourceTree = "<group>"; };
+		569E28D3205FEE5F00B0D01C /* UIViewController+XCSwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XCSwizzling.h"; sourceTree = "<group>"; };
+		569E28D4205FEE5F00B0D01C /* UIViewController+XCSwizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XCSwizzling.m"; sourceTree = "<group>"; };
+		569E28D6205FF1A800B0D01C /* UIImage+XCExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+XCExtension.h"; sourceTree = "<group>"; };
+		569E28D7205FF1A800B0D01C /* UIImage+XCExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XCExtension.m"; sourceTree = "<group>"; };
+		569E28D920609FE100B0D01C /* UINavigationBar+XCSwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+XCSwizzling.h"; sourceTree = "<group>"; };
+		569E28DA20609FE100B0D01C /* UINavigationBar+XCSwizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+XCSwizzling.m"; sourceTree = "<group>"; };
+		569E28DC2060A22E00B0D01C /* UIView+XCExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+XCExtension.h"; sourceTree = "<group>"; };
+		569E28DD2060A22E00B0D01C /* UIView+XCExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+XCExtension.m"; sourceTree = "<group>"; };
+		569E28DF2060AB4B00B0D01C /* GlobalSwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalSwizzling.h; sourceTree = "<group>"; };
+		569E28E02060ABB600B0D01C /* GlobalPods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalPods.h; sourceTree = "<group>"; };
 		5DD15F60BF4C3EF2E296E4DD /* libPods-XCProjectOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XCProjectOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5618F9CBD2D4FC11217E9EE /* Pods-XCProjectOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCProjectOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XCProjectOC/Pods-XCProjectOC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,15 +153,15 @@
 		569E2875205F568C00B0D01C /* XCProjectOC */ = {
 			isa = PBXGroup;
 			children = (
+				569E28C2205FE60F00B0D01C /* Model */,
+				569E28C1205FE60300B0D01C /* Network */,
+				569E28C0205FE5EC00B0D01C /* Utils */,
+				569E28D1205FECC900B0D01C /* Swizzling */,
+				569E28BF205FE58600B0D01C /* Categories */,
+				569E28AF205FE07F00B0D01C /* ViewControllers */,
 				569E2876205F568C00B0D01C /* AppDelegate.h */,
 				569E2877205F568C00B0D01C /* AppDelegate.m */,
-				569E2879205F568C00B0D01C /* ViewController.h */,
-				569E287A205F568C00B0D01C /* ViewController.m */,
-				569E287C205F568C00B0D01C /* Main.storyboard */,
-				569E287F205F568C00B0D01C /* Assets.xcassets */,
-				569E2881205F568C00B0D01C /* LaunchScreen.storyboard */,
-				569E2884205F568C00B0D01C /* Info.plist */,
-				569E2885205F568C00B0D01C /* main.m */,
+				569E28BC205FE13600B0D01C /* Support */,
 			);
 			path = XCProjectOC;
 			sourceTree = "<group>";
@@ -145,6 +182,113 @@
 				569E289C205F568C00B0D01C /* Info.plist */,
 			);
 			path = XCProjectOCUITests;
+			sourceTree = "<group>";
+		};
+		569E28AF205FE07F00B0D01C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				569E28B1205FE0AF00B0D01C /* Base */,
+				569E28B0205FE09700B0D01C /* Home */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		569E28B0205FE09700B0D01C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				569E28B9205FE12300B0D01C /* XCHomeViewController.h */,
+				569E28BA205FE12300B0D01C /* XCHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		569E28B1205FE0AF00B0D01C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				569E28B2205FE0C600B0D01C /* ViewController */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		569E28B2205FE0C600B0D01C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				569E28B3205FE0EF00B0D01C /* XCBaseViewController.h */,
+				569E28B4205FE0EF00B0D01C /* XCBaseViewController.m */,
+				569E28B6205FE10D00B0D01C /* XCBaseNacigationController.h */,
+				569E28B7205FE10D00B0D01C /* XCBaseNacigationController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		569E28BC205FE13600B0D01C /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				569E287C205F568C00B0D01C /* Main.storyboard */,
+				569E287F205F568C00B0D01C /* Assets.xcassets */,
+				569E2881205F568C00B0D01C /* LaunchScreen.storyboard */,
+				569E2884205F568C00B0D01C /* Info.plist */,
+				569E2885205F568C00B0D01C /* main.m */,
+				569E28BD205FE18C00B0D01C /* PrefixHeader.pch */,
+				569E28BE205FE21700B0D01C /* define.h */,
+				569E28E02060ABB600B0D01C /* GlobalPods.h */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		569E28BF205FE58600B0D01C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				569E28CA205FEB0900B0D01C /* GlobalCategories.h */,
+				569E28C7205FEAEE00B0D01C /* UIColor+XCExtension.h */,
+				569E28C8205FEAEE00B0D01C /* UIColor+XCExtension.m */,
+				569E28CB205FEB9C00B0D01C /* NSString+XCExtension.h */,
+				569E28CC205FEB9C00B0D01C /* NSString+XCExtension.m */,
+				569E28D6205FF1A800B0D01C /* UIImage+XCExtension.h */,
+				569E28D7205FF1A800B0D01C /* UIImage+XCExtension.m */,
+				569E28DC2060A22E00B0D01C /* UIView+XCExtension.h */,
+				569E28DD2060A22E00B0D01C /* UIView+XCExtension.m */,
+				569E28CE205FEBEB00B0D01C /* UIViewController+XCBackButtonHandler.h */,
+				569E28CF205FEBEB00B0D01C /* UIViewController+XCBackButtonHandler.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		569E28C0205FE5EC00B0D01C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				569E28C6205FE73000B0D01C /* GlobalUtils.h */,
+				569E28C3205FE6D700B0D01C /* XCDevice.h */,
+				569E28C4205FE6D700B0D01C /* XCDevice.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		569E28C1205FE60300B0D01C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		569E28C2205FE60F00B0D01C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		569E28D1205FECC900B0D01C /* Swizzling */ = {
+			isa = PBXGroup;
+			children = (
+				569E28DF2060AB4B00B0D01C /* GlobalSwizzling.h */,
+				569E28D2205FECE900B0D01C /* SwizzlingDefine.h */,
+				569E28D3205FEE5F00B0D01C /* UIViewController+XCSwizzling.h */,
+				569E28D4205FEE5F00B0D01C /* UIViewController+XCSwizzling.m */,
+				569E28D920609FE100B0D01C /* UINavigationBar+XCSwizzling.h */,
+				569E28DA20609FE100B0D01C /* UINavigationBar+XCSwizzling.m */,
+			);
+			path = Swizzling;
 			sourceTree = "<group>";
 		};
 		761134494771400C81F83FE1 /* Pods */ = {
@@ -349,8 +493,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				569E287B205F568C00B0D01C /* ViewController.m in Sources */,
 				569E2886205F568C00B0D01C /* main.m in Sources */,
+				569E28BB205FE12300B0D01C /* XCHomeViewController.m in Sources */,
+				569E28C5205FE6D700B0D01C /* XCDevice.m in Sources */,
+				569E28D5205FEE5F00B0D01C /* UIViewController+XCSwizzling.m in Sources */,
+				569E28B8205FE10D00B0D01C /* XCBaseNacigationController.m in Sources */,
+				569E28CD205FEB9C00B0D01C /* NSString+XCExtension.m in Sources */,
+				569E28DE2060A22E00B0D01C /* UIView+XCExtension.m in Sources */,
+				569E28D8205FF1A800B0D01C /* UIImage+XCExtension.m in Sources */,
+				569E28B5205FE0EF00B0D01C /* XCBaseViewController.m in Sources */,
+				569E28C9205FEAEE00B0D01C /* UIColor+XCExtension.m in Sources */,
+				569E28D0205FEBEB00B0D01C /* UIViewController+XCBackButtonHandler.m in Sources */,
+				569E28DB20609FE100B0D01C /* UINavigationBar+XCSwizzling.m in Sources */,
 				569E2878205F568C00B0D01C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,7 +671,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67LFD376B9;
-				INFOPLIST_FILE = XCProjectOC/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/XCProjectOC/Support/PrefixHeader.pch";
+				INFOPLIST_FILE = XCProjectOC/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaochen.XCProjectOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,7 +688,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67LFD376B9;
-				INFOPLIST_FILE = XCProjectOC/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/XCProjectOC/Support/PrefixHeader.pch";
+				INFOPLIST_FILE = XCProjectOC/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaochen.XCProjectOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
