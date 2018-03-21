@@ -26,6 +26,9 @@
 		569E28D8205FF1A800B0D01C /* UIImage+XCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E28D7205FF1A800B0D01C /* UIImage+XCExtension.m */; };
 		569E28DB20609FE100B0D01C /* UINavigationBar+XCSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E28DA20609FE100B0D01C /* UINavigationBar+XCSwizzling.m */; };
 		569E28DE2060A22E00B0D01C /* UIView+XCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E28DD2060A22E00B0D01C /* UIView+XCExtension.m */; };
+		569E29122061155E00B0D01C /* XCCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E29112061155E00B0D01C /* XCCache.m */; };
+		569E291E2062090D00B0D01C /* XCTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E291D2062090D00B0D01C /* XCTools.m */; };
+		569E2938206295BF00B0D01C /* XCAnimationProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E2937206295BF00B0D01C /* XCAnimationProgress.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +93,14 @@
 		569E28DD2060A22E00B0D01C /* UIView+XCExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+XCExtension.m"; sourceTree = "<group>"; };
 		569E28DF2060AB4B00B0D01C /* GlobalSwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalSwizzling.h; sourceTree = "<group>"; };
 		569E28E02060ABB600B0D01C /* GlobalPods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalPods.h; sourceTree = "<group>"; };
+		569E29102061155E00B0D01C /* XCCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCCache.h; sourceTree = "<group>"; };
+		569E29112061155E00B0D01C /* XCCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCCache.m; sourceTree = "<group>"; };
+		569E291A206208D800B0D01C /* NetworkDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkDefine.h; sourceTree = "<group>"; };
+		569E291B206208D900B0D01C /* GlobalNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalNetwork.h; sourceTree = "<group>"; };
+		569E291C2062090D00B0D01C /* XCTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCTools.h; sourceTree = "<group>"; };
+		569E291D2062090D00B0D01C /* XCTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCTools.m; sourceTree = "<group>"; };
+		569E2936206295BF00B0D01C /* XCAnimationProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCAnimationProgress.h; sourceTree = "<group>"; };
+		569E2937206295BF00B0D01C /* XCAnimationProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCAnimationProgress.m; sourceTree = "<group>"; };
 		5DD15F60BF4C3EF2E296E4DD /* libPods-XCProjectOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XCProjectOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5618F9CBD2D4FC11217E9EE /* Pods-XCProjectOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCProjectOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XCProjectOC/Pods-XCProjectOC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,6 +169,7 @@
 				569E28C0205FE5EC00B0D01C /* Utils */,
 				569E28D1205FECC900B0D01C /* Swizzling */,
 				569E28BF205FE58600B0D01C /* Categories */,
+				569E29352062959C00B0D01C /* Views */,
 				569E28AF205FE07F00B0D01C /* ViewControllers */,
 				569E2876205F568C00B0D01C /* AppDelegate.h */,
 				569E2877205F568C00B0D01C /* AppDelegate.m */,
@@ -260,6 +272,10 @@
 				569E28C6205FE73000B0D01C /* GlobalUtils.h */,
 				569E28C3205FE6D700B0D01C /* XCDevice.h */,
 				569E28C4205FE6D700B0D01C /* XCDevice.m */,
+				569E29102061155E00B0D01C /* XCCache.h */,
+				569E29112061155E00B0D01C /* XCCache.m */,
+				569E291C2062090D00B0D01C /* XCTools.h */,
+				569E291D2062090D00B0D01C /* XCTools.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -267,6 +283,8 @@
 		569E28C1205FE60300B0D01C /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				569E291B206208D900B0D01C /* GlobalNetwork.h */,
+				569E291A206208D800B0D01C /* NetworkDefine.h */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -289,6 +307,15 @@
 				569E28DA20609FE100B0D01C /* UINavigationBar+XCSwizzling.m */,
 			);
 			path = Swizzling;
+			sourceTree = "<group>";
+		};
+		569E29352062959C00B0D01C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				569E2936206295BF00B0D01C /* XCAnimationProgress.h */,
+				569E2937206295BF00B0D01C /* XCAnimationProgress.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		761134494771400C81F83FE1 /* Pods */ = {
@@ -493,6 +520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				569E2938206295BF00B0D01C /* XCAnimationProgress.m in Sources */,
 				569E2886205F568C00B0D01C /* main.m in Sources */,
 				569E28BB205FE12300B0D01C /* XCHomeViewController.m in Sources */,
 				569E28C5205FE6D700B0D01C /* XCDevice.m in Sources */,
@@ -500,6 +528,8 @@
 				569E28B8205FE10D00B0D01C /* XCBaseNacigationController.m in Sources */,
 				569E28CD205FEB9C00B0D01C /* NSString+XCExtension.m in Sources */,
 				569E28DE2060A22E00B0D01C /* UIView+XCExtension.m in Sources */,
+				569E29122061155E00B0D01C /* XCCache.m in Sources */,
+				569E291E2062090D00B0D01C /* XCTools.m in Sources */,
 				569E28D8205FF1A800B0D01C /* UIImage+XCExtension.m in Sources */,
 				569E28B5205FE0EF00B0D01C /* XCBaseViewController.m in Sources */,
 				569E28C9205FEAEE00B0D01C /* UIColor+XCExtension.m in Sources */,

@@ -10,6 +10,7 @@
 #define GlobalUtils_h
 
 #import "XCDevice.h"
-
+#import "XCCache.h"
+#import "XCTools.h"
 
 #endif /* GlobalUtils_h */
