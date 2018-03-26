@@ -10,6 +10,7 @@
 #define GlobalNetwork_h
 
 #import "NetworkDefine.h"
-
+#import "XCBaseNetwork.h"
+#import "XCBaseNetworkManager.h"
 
 #endif /* GlobalNetwork_h */

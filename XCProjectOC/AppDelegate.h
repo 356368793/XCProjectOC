@@ -12,6 +12,8 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+// subscription
+@property (nonatomic) BOOL isPayed;
 
 @end
 

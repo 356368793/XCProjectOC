@@ -29,6 +29,23 @@
 		569E29122061155E00B0D01C /* XCCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E29112061155E00B0D01C /* XCCache.m */; };
 		569E291E2062090D00B0D01C /* XCTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E291D2062090D00B0D01C /* XCTools.m */; };
 		569E2938206295BF00B0D01C /* XCAnimationProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E2937206295BF00B0D01C /* XCAnimationProgress.m */; };
+		56FD3DA820661F9F008FA85F /* XCKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FD3DA620661F9F008FA85F /* XCKeychain.m */; };
+		56FD3DCC20688CA4008FA85F /* XCBaseData.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FD3DC420688CA3008FA85F /* XCBaseData.m */; };
+		56FD3DCD20688CA4008FA85F /* XCFMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FD3DCA20688CA4008FA85F /* XCFMDBManager.m */; };
+		56FD3DCE20688CA4008FA85F /* XCBaseDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FD3DCB20688CA4008FA85F /* XCBaseDataManager.m */; };
+		56FD3DD320688D09008FA85F /* XCBaseNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FD3DD020688D09008FA85F /* XCBaseNetworkManager.m */; };
+		56FD3DD420688D09008FA85F /* XCBaseNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FD3DD120688D09008FA85F /* XCBaseNetwork.m */; };
+		56FD3DDC20688D23008FA85F /* XCPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FD3DD520688D22008FA85F /* XCPhotoModel.m */; };
+		56FD3DDD20688D23008FA85F /* XCLRTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FD3DD620688D22008FA85F /* XCLRTableViewCellModel.m */; };
+		56FD3DDE20688D23008FA85F /* XCWallpaperCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FD3DD820688D22008FA85F /* XCWallpaperCategoryModel.m */; };
+		56FD3DE320688E02008FA85F /* XCKeychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FD3DE020688E01008FA85F /* XCKeychainManager.m */; };
+		56FD3DE420688E02008FA85F /* XCIAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FD3DE220688E02008FA85F /* XCIAPManager.m */; };
+		56FD3DEA20688E63008FA85F /* XCSubscriptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56FD3DE820688E63008FA85F /* XCSubscriptionView.xib */; };
+		56FD3DEB20688E63008FA85F /* XCSubscriptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FD3DE920688E63008FA85F /* XCSubscriptionView.m */; };
+		56FD3DF120688F05008FA85F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56FD3DEE20688F05008FA85F /* FBSDKCoreKit.framework */; };
+		56FD3DF220688F05008FA85F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56FD3DEF20688F05008FA85F /* Bolts.framework */; };
+		56FD3DF420688FE8008FA85F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56FD3DF320688FE8008FA85F /* GoogleService-Info.plist */; };
+		56FD3DF620689119008FA85F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 56FD3DF520689119008FA85F /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +118,39 @@
 		569E291D2062090D00B0D01C /* XCTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCTools.m; sourceTree = "<group>"; };
 		569E2936206295BF00B0D01C /* XCAnimationProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCAnimationProgress.h; sourceTree = "<group>"; };
 		569E2937206295BF00B0D01C /* XCAnimationProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCAnimationProgress.m; sourceTree = "<group>"; };
+		56FD3DA620661F9F008FA85F /* XCKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCKeychain.m; sourceTree = "<group>"; };
+		56FD3DA720661F9F008FA85F /* XCKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCKeychain.h; sourceTree = "<group>"; };
+		56FD3DC420688CA3008FA85F /* XCBaseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCBaseData.m; sourceTree = "<group>"; };
+		56FD3DC520688CA3008FA85F /* XCBaseDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCBaseDataManager.h; sourceTree = "<group>"; };
+		56FD3DC620688CA3008FA85F /* XCFMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFMDBManager.h; sourceTree = "<group>"; };
+		56FD3DC720688CA3008FA85F /* RestorationKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestorationKey.h; sourceTree = "<group>"; };
+		56FD3DC820688CA4008FA85F /* GlobalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalData.h; sourceTree = "<group>"; };
+		56FD3DC920688CA4008FA85F /* XCBaseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCBaseData.h; sourceTree = "<group>"; };
+		56FD3DCA20688CA4008FA85F /* XCFMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFMDBManager.m; sourceTree = "<group>"; };
+		56FD3DCB20688CA4008FA85F /* XCBaseDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCBaseDataManager.m; sourceTree = "<group>"; };
+		56FD3DCF20688D09008FA85F /* XCBaseNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCBaseNetwork.h; sourceTree = "<group>"; };
+		56FD3DD020688D09008FA85F /* XCBaseNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCBaseNetworkManager.m; sourceTree = "<group>"; };
+		56FD3DD120688D09008FA85F /* XCBaseNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCBaseNetwork.m; sourceTree = "<group>"; };
+		56FD3DD220688D09008FA85F /* XCBaseNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCBaseNetworkManager.h; sourceTree = "<group>"; };
+		56FD3DD520688D22008FA85F /* XCPhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCPhotoModel.m; sourceTree = "<group>"; };
+		56FD3DD620688D22008FA85F /* XCLRTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCLRTableViewCellModel.m; sourceTree = "<group>"; };
+		56FD3DD720688D22008FA85F /* XCLRTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCLRTableViewCellModel.h; sourceTree = "<group>"; };
+		56FD3DD820688D22008FA85F /* XCWallpaperCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCWallpaperCategoryModel.m; sourceTree = "<group>"; };
+		56FD3DD920688D22008FA85F /* GlobalModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalModel.h; sourceTree = "<group>"; };
+		56FD3DDA20688D23008FA85F /* XCPhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCPhotoModel.h; sourceTree = "<group>"; };
+		56FD3DDB20688D23008FA85F /* XCWallpaperCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCWallpaperCategoryModel.h; sourceTree = "<group>"; };
+		56FD3DDF20688E01008FA85F /* XCIAPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCIAPManager.h; sourceTree = "<group>"; };
+		56FD3DE020688E01008FA85F /* XCKeychainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCKeychainManager.m; sourceTree = "<group>"; };
+		56FD3DE120688E01008FA85F /* XCKeychainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCKeychainManager.h; sourceTree = "<group>"; };
+		56FD3DE220688E02008FA85F /* XCIAPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCIAPManager.m; sourceTree = "<group>"; };
+		56FD3DE720688E63008FA85F /* XCSubscriptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCSubscriptionView.h; sourceTree = "<group>"; };
+		56FD3DE820688E63008FA85F /* XCSubscriptionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCSubscriptionView.xib; sourceTree = "<group>"; };
+		56FD3DE920688E63008FA85F /* XCSubscriptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCSubscriptionView.m; sourceTree = "<group>"; };
+		56FD3DEE20688F05008FA85F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		56FD3DEF20688F05008FA85F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		56FD3DF020688F05008FA85F /* GlobalLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalLib.h; sourceTree = "<group>"; };
+		56FD3DF320688FE8008FA85F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		56FD3DF520689119008FA85F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5DD15F60BF4C3EF2E296E4DD /* libPods-XCProjectOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XCProjectOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5618F9CBD2D4FC11217E9EE /* Pods-XCProjectOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCProjectOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XCProjectOC/Pods-XCProjectOC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,7 +160,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56FD3DF220688F05008FA85F /* Bolts.framework in Frameworks */,
 				003B6926DF24D84251DC8663 /* libPods-XCProjectOC.a in Frameworks */,
+				56FD3DF120688F05008FA85F /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +194,7 @@
 		569E286A205F568C00B0D01C = {
 			isa = PBXGroup;
 			children = (
+				56FD3DF520689119008FA85F /* Default-568h@2x.png */,
 				569E2875205F568C00B0D01C /* XCProjectOC */,
 				569E288E205F568C00B0D01C /* XCProjectOCTests */,
 				569E2899205F568C00B0D01C /* XCProjectOCUITests */,
@@ -164,6 +217,8 @@
 		569E2875205F568C00B0D01C /* XCProjectOC */ = {
 			isa = PBXGroup;
 			children = (
+				56FD3DEC20688EE0008FA85F /* Lib */,
+				56FD3DC320688C6B008FA85F /* Data */,
 				569E28C2205FE60F00B0D01C /* Model */,
 				569E28C1205FE60300B0D01C /* Network */,
 				569E28C0205FE5EC00B0D01C /* Utils */,
@@ -240,6 +295,7 @@
 				569E287F205F568C00B0D01C /* Assets.xcassets */,
 				569E2881205F568C00B0D01C /* LaunchScreen.storyboard */,
 				569E2884205F568C00B0D01C /* Info.plist */,
+				56FD3DF320688FE8008FA85F /* GoogleService-Info.plist */,
 				569E2885205F568C00B0D01C /* main.m */,
 				569E28BD205FE18C00B0D01C /* PrefixHeader.pch */,
 				569E28BE205FE21700B0D01C /* define.h */,
@@ -276,6 +332,12 @@
 				569E29112061155E00B0D01C /* XCCache.m */,
 				569E291C2062090D00B0D01C /* XCTools.h */,
 				569E291D2062090D00B0D01C /* XCTools.m */,
+				56FD3DA720661F9F008FA85F /* XCKeychain.h */,
+				56FD3DA620661F9F008FA85F /* XCKeychain.m */,
+				56FD3DE120688E01008FA85F /* XCKeychainManager.h */,
+				56FD3DE020688E01008FA85F /* XCKeychainManager.m */,
+				56FD3DDF20688E01008FA85F /* XCIAPManager.h */,
+				56FD3DE220688E02008FA85F /* XCIAPManager.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -285,6 +347,10 @@
 			children = (
 				569E291B206208D900B0D01C /* GlobalNetwork.h */,
 				569E291A206208D800B0D01C /* NetworkDefine.h */,
+				56FD3DCF20688D09008FA85F /* XCBaseNetwork.h */,
+				56FD3DD120688D09008FA85F /* XCBaseNetwork.m */,
+				56FD3DD220688D09008FA85F /* XCBaseNetworkManager.h */,
+				56FD3DD020688D09008FA85F /* XCBaseNetworkManager.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -292,6 +358,13 @@
 		569E28C2205FE60F00B0D01C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				56FD3DD920688D22008FA85F /* GlobalModel.h */,
+				56FD3DD720688D22008FA85F /* XCLRTableViewCellModel.h */,
+				56FD3DD620688D22008FA85F /* XCLRTableViewCellModel.m */,
+				56FD3DDA20688D23008FA85F /* XCPhotoModel.h */,
+				56FD3DD520688D22008FA85F /* XCPhotoModel.m */,
+				56FD3DDB20688D23008FA85F /* XCWallpaperCategoryModel.h */,
+				56FD3DD820688D22008FA85F /* XCWallpaperCategoryModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -312,10 +385,62 @@
 		569E29352062959C00B0D01C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				56FD3DE620688E45008FA85F /* Subscription */,
+				56FD3DE520688E34008FA85F /* Progress */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		56FD3DC320688C6B008FA85F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				56FD3DC820688CA4008FA85F /* GlobalData.h */,
+				56FD3DC720688CA3008FA85F /* RestorationKey.h */,
+				56FD3DC920688CA4008FA85F /* XCBaseData.h */,
+				56FD3DC420688CA3008FA85F /* XCBaseData.m */,
+				56FD3DC520688CA3008FA85F /* XCBaseDataManager.h */,
+				56FD3DCB20688CA4008FA85F /* XCBaseDataManager.m */,
+				56FD3DC620688CA3008FA85F /* XCFMDBManager.h */,
+				56FD3DCA20688CA4008FA85F /* XCFMDBManager.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		56FD3DE520688E34008FA85F /* Progress */ = {
+			isa = PBXGroup;
+			children = (
 				569E2936206295BF00B0D01C /* XCAnimationProgress.h */,
 				569E2937206295BF00B0D01C /* XCAnimationProgress.m */,
 			);
-			path = Views;
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		56FD3DE620688E45008FA85F /* Subscription */ = {
+			isa = PBXGroup;
+			children = (
+				56FD3DE720688E63008FA85F /* XCSubscriptionView.h */,
+				56FD3DE920688E63008FA85F /* XCSubscriptionView.m */,
+				56FD3DE820688E63008FA85F /* XCSubscriptionView.xib */,
+			);
+			path = Subscription;
+			sourceTree = "<group>";
+		};
+		56FD3DEC20688EE0008FA85F /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				56FD3DF020688F05008FA85F /* GlobalLib.h */,
+				56FD3DED20688F05008FA85F /* FaceBook */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		56FD3DED20688F05008FA85F /* FaceBook */ = {
+			isa = PBXGroup;
+			children = (
+				56FD3DEE20688F05008FA85F /* FBSDKCoreKit.framework */,
+				56FD3DEF20688F05008FA85F /* Bolts.framework */,
+			);
+			path = FaceBook;
 			sourceTree = "<group>";
 		};
 		761134494771400C81F83FE1 /* Pods */ = {
@@ -439,7 +564,10 @@
 			files = (
 				569E2883205F568C00B0D01C /* LaunchScreen.storyboard in Resources */,
 				569E2880205F568C00B0D01C /* Assets.xcassets in Resources */,
+				56FD3DF420688FE8008FA85F /* GoogleService-Info.plist in Resources */,
+				56FD3DEA20688E63008FA85F /* XCSubscriptionView.xib in Resources */,
 				569E287E205F568C00B0D01C /* Main.storyboard in Resources */,
+				56FD3DF620689119008FA85F /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,22 +648,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56FD3DDD20688D23008FA85F /* XCLRTableViewCellModel.m in Sources */,
 				569E2938206295BF00B0D01C /* XCAnimationProgress.m in Sources */,
 				569E2886205F568C00B0D01C /* main.m in Sources */,
 				569E28BB205FE12300B0D01C /* XCHomeViewController.m in Sources */,
+				56FD3DD320688D09008FA85F /* XCBaseNetworkManager.m in Sources */,
+				56FD3DCC20688CA4008FA85F /* XCBaseData.m in Sources */,
 				569E28C5205FE6D700B0D01C /* XCDevice.m in Sources */,
 				569E28D5205FEE5F00B0D01C /* UIViewController+XCSwizzling.m in Sources */,
 				569E28B8205FE10D00B0D01C /* XCBaseNacigationController.m in Sources */,
+				56FD3DDE20688D23008FA85F /* XCWallpaperCategoryModel.m in Sources */,
 				569E28CD205FEB9C00B0D01C /* NSString+XCExtension.m in Sources */,
 				569E28DE2060A22E00B0D01C /* UIView+XCExtension.m in Sources */,
+				56FD3DE320688E02008FA85F /* XCKeychainManager.m in Sources */,
 				569E29122061155E00B0D01C /* XCCache.m in Sources */,
 				569E291E2062090D00B0D01C /* XCTools.m in Sources */,
 				569E28D8205FF1A800B0D01C /* UIImage+XCExtension.m in Sources */,
 				569E28B5205FE0EF00B0D01C /* XCBaseViewController.m in Sources */,
+				56FD3DD420688D09008FA85F /* XCBaseNetwork.m in Sources */,
+				56FD3DCE20688CA4008FA85F /* XCBaseDataManager.m in Sources */,
 				569E28C9205FEAEE00B0D01C /* UIColor+XCExtension.m in Sources */,
+				56FD3DDC20688D23008FA85F /* XCPhotoModel.m in Sources */,
 				569E28D0205FEBEB00B0D01C /* UIViewController+XCBackButtonHandler.m in Sources */,
+				56FD3DEB20688E63008FA85F /* XCSubscriptionView.m in Sources */,
 				569E28DB20609FE100B0D01C /* UINavigationBar+XCSwizzling.m in Sources */,
+				56FD3DA820661F9F008FA85F /* XCKeychain.m in Sources */,
+				56FD3DCD20688CA4008FA85F /* XCFMDBManager.m in Sources */,
 				569E2878205F568C00B0D01C /* AppDelegate.m in Sources */,
+				56FD3DE420688E02008FA85F /* XCIAPManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -701,6 +841,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67LFD376B9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XCProjectOC/Lib/FaceBook",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/XCProjectOC/Support/PrefixHeader.pch";
 				INFOPLIST_FILE = XCProjectOC/Support/Info.plist;
@@ -718,6 +862,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67LFD376B9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XCProjectOC/Lib/FaceBook",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/XCProjectOC/Support/PrefixHeader.pch";
 				INFOPLIST_FILE = XCProjectOC/Support/Info.plist;

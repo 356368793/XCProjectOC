@@ -74,6 +74,11 @@ _Pragma("clang diagnostic pop") \
  */
 #define SharedAppDelegate ((AppDelegate*)[[UIApplication sharedApplication] delegate])
 
+/**
+ html
+ */
+#define kHTMLPrivacyPolicy @"http://s.fastcleanerme.com/themegather/PrivacyPolicy.html"
+#define kHTMLTermsofUse @"http://s.fastcleanerme.com/themegather/TermsofUse.html"
 
 
 #endif /* define_h */

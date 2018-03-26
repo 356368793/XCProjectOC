@@ -12,5 +12,6 @@
 #import "XCDevice.h"
 #import "XCCache.h"
 #import "XCTools.h"
+#import "XCKeychain.h"
 
 #endif /* GlobalUtils_h */

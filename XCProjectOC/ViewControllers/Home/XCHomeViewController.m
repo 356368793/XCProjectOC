@@ -10,6 +10,8 @@
 
 @interface XCHomeViewController ()
 
+@property (strong, nonatomic) UICollectionView *collectionView;
+
 @end
 
 @implementation XCHomeViewController
@@ -19,14 +21,8 @@
     
     self.view.backgroundColor = [UIColor randomColor];
     
-    XCCache *cache = [[XCCache alloc] init];
-    NSString *cacheString = [cache getCacheString];
-    NSLog(@"cacheString = %@", cacheString);
-    
-    NSString *bundle = [XCTools getBundleID];
-    NSString *version = [XCTools getVersion];
-    NSString *appName = [XCTools getAppName];
-    NSLog(@"bundle = %@, version = %@, appName = %@", bundle, version, appName);
 }
+
+
 
 @end

@@ -17,6 +17,8 @@
 #import "GlobalCategories.h"
 #import "GlobalSwizzling.h"
 #import "GlobalPods.h"
+#import "GlobalModel.h"
 #import "GlobalNetwork.h"
+#import "GlobalData.h"
 
 #endif /* PrefixHeader_pch */

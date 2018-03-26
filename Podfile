@@ -6,9 +6,11 @@ target 'XCProjectOC' do
     pod 'AFNetworking'
     pod 'MJRefresh'
     pod 'Masonry', '~> 1.0.2'
-    pod 'UMengAnalytics'
     pod 'MJExtension'
-    pod 'Firebase/Core'
     pod 'YYText'
+    pod 'FMDB'
+    
+    pod 'UMengAnalytics'
+    pod 'Firebase/Core'
 end
 
