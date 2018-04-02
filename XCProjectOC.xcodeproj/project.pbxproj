@@ -35,6 +35,7 @@
 		569E29122061155E00B0D01C /* XCCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E29112061155E00B0D01C /* XCCache.m */; };
 		569E291E2062090D00B0D01C /* XCTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E291D2062090D00B0D01C /* XCTools.m */; };
 		569E2938206295BF00B0D01C /* XCAnimationProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E2937206295BF00B0D01C /* XCAnimationProgress.m */; };
+		56FC29D620725DDA0090683A /* XCLocalPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FC29D520725DDA0090683A /* XCLocalPush.m */; };
 		56FD3DA820661F9F008FA85F /* XCKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FD3DA620661F9F008FA85F /* XCKeychain.m */; };
 		56FD3DD320688D09008FA85F /* XCBaseNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FD3DD020688D09008FA85F /* XCBaseNetworkManager.m */; };
 		56FD3DD420688D09008FA85F /* XCBaseNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FD3DD120688D09008FA85F /* XCBaseNetwork.m */; };
@@ -132,6 +133,8 @@
 		569E291D2062090D00B0D01C /* XCTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCTools.m; sourceTree = "<group>"; };
 		569E2936206295BF00B0D01C /* XCAnimationProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCAnimationProgress.h; sourceTree = "<group>"; };
 		569E2937206295BF00B0D01C /* XCAnimationProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCAnimationProgress.m; sourceTree = "<group>"; };
+		56FC29D420725DDA0090683A /* XCLocalPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCLocalPush.h; sourceTree = "<group>"; };
+		56FC29D520725DDA0090683A /* XCLocalPush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCLocalPush.m; sourceTree = "<group>"; };
 		56FD3DA620661F9F008FA85F /* XCKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCKeychain.m; sourceTree = "<group>"; };
 		56FD3DA720661F9F008FA85F /* XCKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCKeychain.h; sourceTree = "<group>"; };
 		56FD3DC720688CA3008FA85F /* RestorationKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestorationKey.h; sourceTree = "<group>"; };
@@ -346,6 +349,8 @@
 				56FD3DE020688E01008FA85F /* XCKeychainManager.m */,
 				56FD3DDF20688E01008FA85F /* XCIAPManager.h */,
 				56FD3DE220688E02008FA85F /* XCIAPManager.m */,
+				56FC29D420725DDA0090683A /* XCLocalPush.h */,
+				56FC29D520725DDA0090683A /* XCLocalPush.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -673,6 +678,7 @@
 				564515042071D16200A42957 /* XCDailyPhotoModel.m in Sources */,
 				569E28CD205FEB9C00B0D01C /* NSString+XCExtension.m in Sources */,
 				569E28DE2060A22E00B0D01C /* UIView+XCExtension.m in Sources */,
+				56FC29D620725DDA0090683A /* XCLocalPush.m in Sources */,
 				56FD3DE320688E02008FA85F /* XCKeychainManager.m in Sources */,
 				569E29122061155E00B0D01C /* XCCache.m in Sources */,
 				569E291E2062090D00B0D01C /* XCTools.m in Sources */,
@@ -862,6 +868,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/XCProjectOC/Support/PrefixHeader.pch";
 				INFOPLIST_FILE = XCProjectOC/Support/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaochen.XCProjectOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -883,6 +890,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/XCProjectOC/Support/PrefixHeader.pch";
 				INFOPLIST_FILE = XCProjectOC/Support/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaochen.XCProjectOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";

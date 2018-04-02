@@ -68,6 +68,7 @@ _Pragma("clang diagnostic pop") \
 #define iPhone [[XCDevice getDeviceName] containsString:@"iPhone"]
 #define iPad [[XCDevice getDeviceName] containsString:@"iPad"]
 #define Simulator [[XCDevice getDeviceName] containsString:@"Simulator"]
+#define iOS10 [[UIDevice currentDevice].systemVersion floatValue] >= 10.0
 
 /**
  Shared
