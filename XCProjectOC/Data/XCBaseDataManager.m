@@ -7,6 +7,16 @@
 //
 
 #import "XCBaseDataManager.h"
+#import "XCFMDBManager.h"
+
+@interface XCBaseDataManager ()
+
+@property (copy, nonatomic) NSArray<XCPhotoModel *> *addListArray;
+@property (copy, nonatomic) NSArray<XCDailyPhotoModel *> *dayList;
+@property (copy, nonatomic) NSArray<XCPhotoModel *> *popList;
+@property (copy, nonatomic) NSArray<XCPhotoModel *> *categoryImageList;
+
+@end
 
 @implementation XCBaseDataManager
 
@@ -19,89 +29,48 @@ static XCBaseDataManager *_sharedManager = nil;
     return _sharedManager;
 }
 
+#pragma mark -- favorite --
 - (void)addFavorite:(XCPhotoModel *)model {
-    NSMutableArray<XCPhotoModel *> *array = [NSMutableArray arrayWithArray:[XCBaseData sharedData].favListArray];
-    [array addObject:model];
-    [XCBaseData sharedData].favListArray = array;
-    
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [[XCFMDBManager sharedManager] addPhoto:model];
-    });
+    [[XCFMDBManager sharedManager] addFavorite:model];
 }
 
 - (void)removeFavorite:(XCPhotoModel *)model {
-    NSMutableArray<XCPhotoModel *> *array = [NSMutableArray arrayWithArray:[XCBaseData sharedData].favListArray];
-    for (XCPhotoModel *tmpModel in [array copy]) {
-        if ([tmpModel.imageurl isEqualToString:model.imageurl] &&
-            [tmpModel.smallimageurl isEqualToString:model.smallimageurl]) {
-            [array removeObject:model];
-        }
-    }
-    [XCBaseData sharedData].favListArray = array;
-    
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [[XCFMDBManager sharedManager] removePhoto:model];
-    });
+    [[XCFMDBManager sharedManager] removeFavorite:model];
 }
 
 - (BOOL)isExist:(XCPhotoModel *)model {
-    NSMutableArray<XCPhotoModel *> *array = [NSMutableArray arrayWithArray:[XCBaseData sharedData].favListArray];
-    for (XCPhotoModel *tmpModel in [array copy]) {
-        if ([tmpModel.imageurl isEqualToString:model.imageurl] &&
-            [tmpModel.smallimageurl isEqualToString:model.smallimageurl]) {
-            return YES;
+    return [[XCFMDBManager sharedManager] isExist:model];
+}
+
+- (NSArray<XCPhotoModel *> *)getFavoritePhotos {
+    return [[XCFMDBManager sharedManager] getFavoritePhotos];
+}
+
+
+#pragma mark -- new --
+- (void)getXxxxxWithType:(XCBasePhotoType)type block:(void(^)(NSArray<XCPhotoModel *> *))block {
+    if (type == XCBasePhotoTypeGet) {
+        if ([self.addListArray count]) {
+            block(self.addListArray);
+        } else {
+            NSInteger page = [[XCBaseData sharedData] getPageWithPageName:@"New"];
+            [[XCBaseNetworkManager sharedManager] requestAddListWithPage:page block:^(NSArray<XCPhotoModel *> *models) {
+                self.addListArray = models;
+                block(self.addListArray);
+            }];
         }
+    } else {
+        NSInteger newPage = [[XCBaseData sharedData] getAddPageWithPageName:@"New"];
+        [[XCBaseNetworkManager sharedManager] requestAddListWithPage:newPage block:^(NSArray<XCPhotoModel *> *models) {
+            NSMutableArray *muteModels = [NSMutableArray arrayWithArray:self.addListArray];
+            [muteModels addObjectsFromArray:models];
+            self.addListArray = muteModels;
+            block(muteModels);
+        }];
     }
-    return NO;
 }
 
-- (void)managerAddListDataWithArray:(NSArray *)array block:(void (^)(BOOL))block {
-    NSMutableArray *models = [NSMutableArray array];
 
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        for (NSInteger i = 0; i < [array count]; i++) {
-            XCPhotoModel *model = [XCPhotoModel mj_objectWithKeyValues:array[i]];
-            [models addObject:model];
-        }
-        [XCBaseData sharedData].addListArray = models;
-        dispatch_async(dispatch_get_main_queue(), ^{
-            block(YES);
-        });
-    });
-}
 
-- (void)managerPopListDataWithArray:(NSArray *)array block:(void (^)(BOOL))block {
-    NSMutableArray *models = [NSMutableArray array];
-    
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        for (NSInteger i = 0; i < [array count]; i++) {
-            XCPhotoModel *model = [XCPhotoModel mj_objectWithKeyValues:array[i]];
-            [models addObject:model];
-        }
-        [XCBaseData sharedData].popListArray = models;
-        dispatch_async(dispatch_get_main_queue(), ^{
-            block(YES);
-        });
-    });
-}
-
-- (void)managerCategoryImageListDataWithArray:(NSArray *)array block:(void (^)(BOOL))block {
-    NSMutableArray *models = [NSMutableArray array];
-    
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        for (NSInteger i = 0; i < [array count]; i++) {
-            XCPhotoModel *model = [XCPhotoModel mj_objectWithKeyValues:array[i]];
-            [models addObject:model];
-        }
-        [XCBaseData sharedData].categoryImageListArray = models;
-        dispatch_async(dispatch_get_main_queue(), ^{
-            block(YES);
-        });
-    });
-}
-
-- (void)managerCategoryListDataWithArray:(NSArray *)array block:(void (^)(BOOL))block {
-    
-}
 
 @end

@@ -10,7 +10,7 @@
 #import "SVProgressHUD.h"
 #import "AppDelegate.h"
 
-#define kReceiptPassword @"3880ca6215ad4e909339bfc6b053992a"
+#define kReceiptPassword @""
 
 @interface XCIAPManager () <SKPaymentTransactionObserver,SKProductsRequestDelegate>
 

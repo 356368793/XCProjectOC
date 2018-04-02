@@ -12,9 +12,9 @@
 
 + (instancetype)sharedManager;
 
-- (void)addPhoto:(XCPhotoModel *)photo;
-- (BOOL)isPhotoExist:(XCPhotoModel *)photo;
-- (void)removePhoto:(XCPhotoModel *)photo;
+- (void)addFavorite:(XCPhotoModel *)model;
+- (void)removeFavorite:(XCPhotoModel *)model;
+- (BOOL)isExist:(XCPhotoModel *)model;
 - (NSArray<XCPhotoModel *> *)getFavoritePhotos;
 
 @end

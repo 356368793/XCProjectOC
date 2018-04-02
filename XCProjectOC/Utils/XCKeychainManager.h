@@ -10,8 +10,8 @@
 
 @interface XCKeychainManager : NSObject
 
-+ (void)saveImageUrl:(NSString *)imageUrl andBeyondMaxBlock:(void(^)(BOOL))beyondMax;
++ (void)saveImageUrl:(NSString *)imageUrl andBeyondMaxBlock:(void(^)(BOOL, NSInteger))beyondMax;
 
-
++ (NSInteger)getLeftImageCount;
 
 @end

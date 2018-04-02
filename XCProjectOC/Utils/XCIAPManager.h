@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <StoreKit/StoreKit.h>
 
-#define kPurchaseID @"one_week"
+#define kPurchaseID @""
 
 typedef enum {
     kIAPPurchSuccess = 0,       // 购买成功

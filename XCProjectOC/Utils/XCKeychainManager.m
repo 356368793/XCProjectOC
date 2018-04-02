@@ -8,14 +8,15 @@
 
 #import "XCKeychainManager.h"
 #import "XCKeychain.h"
+#import "AppDelegate.h"
 
 #define kKeyImages @"images"
 #define kKeyCount @"count"
-#define kMaxCount 5
+#define kMaxCount 10
 
 @implementation XCKeychainManager
 
-+ (void)saveImageUrl:(NSString *)imageUrl andBeyondMaxBlock:(void (^)(BOOL))beyondMax {
++ (void)saveImageUrl:(NSString *)imageUrl andBeyondMaxBlock:(void (^)(BOOL, NSInteger))beyondMax {
     NSString *bundleID = [XCTools getBundleID];
     NSDictionary *dic = [XCKeychain load:bundleID];
     BOOL bMax = NO;
@@ -44,16 +45,34 @@
         
     } else {
         NSDictionary *tmpNewDic = @{
-                                 kKeyCount: @(1),
-                                 kKeyImages: @[imageUrl]
-                                 };
+                                    kKeyCount: @(1),
+                                    kKeyImages: @[imageUrl]
+                                    };
         newDic = [NSMutableDictionary dictionaryWithDictionary:tmpNewDic];
     }
     // 3. save new dic
     [XCKeychain save:bundleID data:newDic];
     NSLog(@"newDic = %@", newDic);
     
-    beyondMax(bMax);
+    // 4. get left count
+    NSInteger dicCount = [newDic[kKeyImages] count];
+    NSInteger leftCount = kMaxCount - dicCount;
+    
+    beyondMax(bMax, leftCount);
+}
+
++ (NSInteger)getLeftImageCount {
+    if (SharedAppDelegate.isPayed) {
+        return -1;
+    }
+    NSString *bundleID = [XCTools getBundleID];
+    NSDictionary *dic = [XCKeychain load:bundleID];
+    
+    if (dic == nil) {
+        return kMaxCount;
+    } else {
+        return kMaxCount - [dic[kKeyImages] count];
+    }
 }
 
 @end

@@ -14,10 +14,13 @@
 
 + (instancetype)sharedData;
 
-@property (copy, nonatomic) NSArray<XCPhotoModel *> *addListArray;
-@property (copy, nonatomic) NSArray<XCPhotoModel *> *popListArray;
+//@property (copy, nonatomic) NSArray<XCPhotoModel *> *addListArray;
+//@property (copy, nonatomic) NSArray<XCPhotoModel *> *popListArray;
 @property (copy, nonatomic) NSArray<XCPhotoModel *> *favListArray;
-@property (copy, nonatomic) NSArray<XCPhotoModel *> *categoryImageListArray;
-@property (copy, nonatomic) NSArray<XCWallpaperCategoryModel *> *categoryArray;
+//@property (copy, nonatomic) NSArray<XCPhotoModel *> *categoryImageListArray;
+//@property (copy, nonatomic) NSArray<XCWallpaperCategoryModel *> *categoryArray;
+
+- (NSInteger)getAddPageWithPageName:(NSString *)pageName;
+- (NSInteger)getPageWithPageName:(NSString *)pageName;
 
 @end

@@ -12,5 +12,6 @@
 #import "XCLRTableViewCellModel.h"
 #import "XCPhotoModel.h"
 #import "XCWallpaperCategoryModel.h"
+#import "XCDailyPhotoModel.h"
 
 #endif /* GlobalModel_h */

@@ -14,10 +14,19 @@
 
 - (void)hasNetwork:(void(^)(BOOL))block;
 
-- (void)requestAllListWithPage:(NSInteger)page block:(void(^)(BOOL))block;
-- (void)requestAddListWithPage:(NSInteger)page block:(void(^)(BOOL))block;
-- (void)requestPopListWithPage:(NSInteger)page block:(void(^)(BOOL))block;
-- (void)requestCategoryImageListWithPage:(NSInteger)page cid:(NSString *)cid block:(void(^)(BOOL))block;
-- (void)requestWallpaperCategoryWithBlock:(void(^)(BOOL))block;
+- (void)requestAllListWithPage:(NSInteger)page block:(void(^)(NSArray<XCPhotoModel *> *))block;
+
+- (void)requestAddListWithPage:(NSInteger)page block:(void(^)(NSArray<XCPhotoModel *> *))block;
+
+- (void)requestPopListWithPage:(NSInteger)page block:(void(^)(NSArray<XCPhotoModel *> *))block;
+
+- (void)requestCategoryImageListWithPage:(NSInteger)page name:(NSString *)name cid:(NSString *)cid block:(void(^)(NSArray<XCPhotoModel *> *))block;
+
+- (void)requestDayListWithPage:(NSInteger)page num:(NSInteger)num block:(void(^)(NSArray<XCDailyPhotoModel *> *))block;
+
+- (void)requestWallpaperCategoryWithBlock:(void(^)(NSArray<XCWallpaperCategoryModel *> *))block;
+
+- (void)sendFeedbackWithText:(NSString *)text block:(void(^)(BOOL))block;
 
 @end
+

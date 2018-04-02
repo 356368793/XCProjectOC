@@ -9,16 +9,11 @@
 #ifndef NetworkDefine_h
 #define NetworkDefine_h
 
-#define XC @"http://s.fastcleanerme.com/v3/wallpaper/"
+#define XC @"http://x.xxxxx.com/xx/xxxx/"
 #define avc @"?avc=1"
 
-#define URLWallpaperCategory  (XC @"Getwpcategory" avc)// category list
+#define URLXxxxxxx  (XC @"xxxx" avc)
 
-#define URLAddList   (XC @"Getaddlist" avc)// add list
-#define URLPopList (XC @"Getpoplist" avc)// pop list
-#define URLCategoryImgList   (XC @"Getwpcgimg" avc)// category images
-#define URLAllList  (XC @"Getwallpaper" avc)// all list
-
-#define URLAudit @"http://m.gglowb.com/v3/wallpaper/Getversioninfo?avc=1" // (XC @"Getversioninfo" avc)
 
 #endif /* NetworkDefine_h */
+

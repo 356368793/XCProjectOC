@@ -8,18 +8,22 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSInteger, XCBasePhotoType) {
+    XCBasePhotoTypeGet = 0, // return old data if exist
+    XCBasePhotoTypeAdd // query new page data
+};
+
 @interface XCBaseDataManager : NSObject
 
 + (instancetype)sharedManager;
 
+// favorite
 - (void)addFavorite:(XCPhotoModel *)model;
 - (void)removeFavorite:(XCPhotoModel *)model;
 - (BOOL)isExist:(XCPhotoModel *)model;
+- (NSArray<XCPhotoModel *> *)getFavoritePhotos;
 
-- (void)managerAddListDataWithArray:(NSArray *)array block:(void(^)(BOOL success))block;
-- (void)managerPopListDataWithArray:(NSArray *)array block:(void(^)(BOOL success))block;
-- (void)managerCategoryImageListDataWithArray:(NSArray *)array block:(void(^)(BOOL success))block;
-- (void)managerCategoryListDataWithArray:(NSArray *)array block:(void(^)(BOOL success))block;
 
+- (void)getXxxxxWithType:(XCBasePhotoType)type block:(void(^)(NSArray<XCPhotoModel *> *))block;
 
 @end

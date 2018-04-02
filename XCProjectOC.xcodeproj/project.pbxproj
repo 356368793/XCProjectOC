@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		003B6926DF24D84251DC8663 /* libPods-XCProjectOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD15F60BF4C3EF2E296E4DD /* libPods-XCProjectOC.a */; };
+		564514FE2071D0AA00A42957 /* XCBaseData.m in Sources */ = {isa = PBXBuildFile; fileRef = 564514F62071D0A900A42957 /* XCBaseData.m */; };
+		564514FF2071D0AA00A42957 /* XCFMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 564514F72071D0A900A42957 /* XCFMDBManager.m */; };
+		564515002071D0AA00A42957 /* XCBaseDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 564514F82071D0AA00A42957 /* XCBaseDataManager.m */; };
+		564515012071D0AA00A42957 /* XCFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 564514FC2071D0AA00A42957 /* XCFMDB.m */; };
+		564515042071D16200A42957 /* XCDailyPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 564515032071D16200A42957 /* XCDailyPhotoModel.m */; };
+		564515072071D1A900A42957 /* XCBaseNetworkManager+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 564515052071D1A900A42957 /* XCBaseNetworkManager+Extension.m */; };
 		569E2878205F568C00B0D01C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E2877205F568C00B0D01C /* AppDelegate.m */; };
 		569E287E205F568C00B0D01C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 569E287C205F568C00B0D01C /* Main.storyboard */; };
 		569E2880205F568C00B0D01C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 569E287F205F568C00B0D01C /* Assets.xcassets */; };
@@ -30,9 +36,6 @@
 		569E291E2062090D00B0D01C /* XCTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E291D2062090D00B0D01C /* XCTools.m */; };
 		569E2938206295BF00B0D01C /* XCAnimationProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 569E2937206295BF00B0D01C /* XCAnimationProgress.m */; };
 		56FD3DA820661F9F008FA85F /* XCKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FD3DA620661F9F008FA85F /* XCKeychain.m */; };
-		56FD3DCC20688CA4008FA85F /* XCBaseData.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FD3DC420688CA3008FA85F /* XCBaseData.m */; };
-		56FD3DCD20688CA4008FA85F /* XCFMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FD3DCA20688CA4008FA85F /* XCFMDBManager.m */; };
-		56FD3DCE20688CA4008FA85F /* XCBaseDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FD3DCB20688CA4008FA85F /* XCBaseDataManager.m */; };
 		56FD3DD320688D09008FA85F /* XCBaseNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FD3DD020688D09008FA85F /* XCBaseNetworkManager.m */; };
 		56FD3DD420688D09008FA85F /* XCBaseNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FD3DD120688D09008FA85F /* XCBaseNetwork.m */; };
 		56FD3DDC20688D23008FA85F /* XCPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FD3DD520688D22008FA85F /* XCPhotoModel.m */; };
@@ -45,7 +48,6 @@
 		56FD3DF120688F05008FA85F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56FD3DEE20688F05008FA85F /* FBSDKCoreKit.framework */; };
 		56FD3DF220688F05008FA85F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56FD3DEF20688F05008FA85F /* Bolts.framework */; };
 		56FD3DF420688FE8008FA85F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56FD3DF320688FE8008FA85F /* GoogleService-Info.plist */; };
-		56FD3DF620689119008FA85F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 56FD3DF520689119008FA85F /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,18 @@
 
 /* Begin PBXFileReference section */
 		4DD44F93435EF01D67587A9F /* Pods-XCProjectOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCProjectOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-XCProjectOC/Pods-XCProjectOC.release.xcconfig"; sourceTree = "<group>"; };
+		564514F62071D0A900A42957 /* XCBaseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCBaseData.m; sourceTree = "<group>"; };
+		564514F72071D0A900A42957 /* XCFMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFMDBManager.m; sourceTree = "<group>"; };
+		564514F82071D0AA00A42957 /* XCBaseDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCBaseDataManager.m; sourceTree = "<group>"; };
+		564514F92071D0AA00A42957 /* XCBaseDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCBaseDataManager.h; sourceTree = "<group>"; };
+		564514FA2071D0AA00A42957 /* XCBaseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCBaseData.h; sourceTree = "<group>"; };
+		564514FB2071D0AA00A42957 /* XCFMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFMDBManager.h; sourceTree = "<group>"; };
+		564514FC2071D0AA00A42957 /* XCFMDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFMDB.m; sourceTree = "<group>"; };
+		564514FD2071D0AA00A42957 /* XCFMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFMDB.h; sourceTree = "<group>"; };
+		564515022071D16200A42957 /* XCDailyPhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCDailyPhotoModel.h; sourceTree = "<group>"; };
+		564515032071D16200A42957 /* XCDailyPhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCDailyPhotoModel.m; sourceTree = "<group>"; };
+		564515052071D1A900A42957 /* XCBaseNetworkManager+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XCBaseNetworkManager+Extension.m"; sourceTree = "<group>"; };
+		564515062071D1A900A42957 /* XCBaseNetworkManager+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XCBaseNetworkManager+Extension.h"; sourceTree = "<group>"; };
 		569E2873205F568C00B0D01C /* XCProjectOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCProjectOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		569E2876205F568C00B0D01C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		569E2877205F568C00B0D01C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -120,14 +134,8 @@
 		569E2937206295BF00B0D01C /* XCAnimationProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCAnimationProgress.m; sourceTree = "<group>"; };
 		56FD3DA620661F9F008FA85F /* XCKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCKeychain.m; sourceTree = "<group>"; };
 		56FD3DA720661F9F008FA85F /* XCKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCKeychain.h; sourceTree = "<group>"; };
-		56FD3DC420688CA3008FA85F /* XCBaseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCBaseData.m; sourceTree = "<group>"; };
-		56FD3DC520688CA3008FA85F /* XCBaseDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCBaseDataManager.h; sourceTree = "<group>"; };
-		56FD3DC620688CA3008FA85F /* XCFMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFMDBManager.h; sourceTree = "<group>"; };
 		56FD3DC720688CA3008FA85F /* RestorationKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestorationKey.h; sourceTree = "<group>"; };
 		56FD3DC820688CA4008FA85F /* GlobalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalData.h; sourceTree = "<group>"; };
-		56FD3DC920688CA4008FA85F /* XCBaseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCBaseData.h; sourceTree = "<group>"; };
-		56FD3DCA20688CA4008FA85F /* XCFMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFMDBManager.m; sourceTree = "<group>"; };
-		56FD3DCB20688CA4008FA85F /* XCBaseDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCBaseDataManager.m; sourceTree = "<group>"; };
 		56FD3DCF20688D09008FA85F /* XCBaseNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCBaseNetwork.h; sourceTree = "<group>"; };
 		56FD3DD020688D09008FA85F /* XCBaseNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCBaseNetworkManager.m; sourceTree = "<group>"; };
 		56FD3DD120688D09008FA85F /* XCBaseNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCBaseNetwork.m; sourceTree = "<group>"; };
@@ -150,7 +158,6 @@
 		56FD3DEF20688F05008FA85F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		56FD3DF020688F05008FA85F /* GlobalLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalLib.h; sourceTree = "<group>"; };
 		56FD3DF320688FE8008FA85F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		56FD3DF520689119008FA85F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5DD15F60BF4C3EF2E296E4DD /* libPods-XCProjectOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XCProjectOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5618F9CBD2D4FC11217E9EE /* Pods-XCProjectOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCProjectOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XCProjectOC/Pods-XCProjectOC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -194,7 +201,6 @@
 		569E286A205F568C00B0D01C = {
 			isa = PBXGroup;
 			children = (
-				56FD3DF520689119008FA85F /* Default-568h@2x.png */,
 				569E2875205F568C00B0D01C /* XCProjectOC */,
 				569E288E205F568C00B0D01C /* XCProjectOCTests */,
 				569E2899205F568C00B0D01C /* XCProjectOCUITests */,
@@ -318,6 +324,8 @@
 				569E28DD2060A22E00B0D01C /* UIView+XCExtension.m */,
 				569E28CE205FEBEB00B0D01C /* UIViewController+XCBackButtonHandler.h */,
 				569E28CF205FEBEB00B0D01C /* UIViewController+XCBackButtonHandler.m */,
+				564515062071D1A900A42957 /* XCBaseNetworkManager+Extension.h */,
+				564515052071D1A900A42957 /* XCBaseNetworkManager+Extension.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -365,6 +373,8 @@
 				56FD3DD520688D22008FA85F /* XCPhotoModel.m */,
 				56FD3DDB20688D23008FA85F /* XCWallpaperCategoryModel.h */,
 				56FD3DD820688D22008FA85F /* XCWallpaperCategoryModel.m */,
+				564515022071D16200A42957 /* XCDailyPhotoModel.h */,
+				564515032071D16200A42957 /* XCDailyPhotoModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -396,12 +406,14 @@
 			children = (
 				56FD3DC820688CA4008FA85F /* GlobalData.h */,
 				56FD3DC720688CA3008FA85F /* RestorationKey.h */,
-				56FD3DC920688CA4008FA85F /* XCBaseData.h */,
-				56FD3DC420688CA3008FA85F /* XCBaseData.m */,
-				56FD3DC520688CA3008FA85F /* XCBaseDataManager.h */,
-				56FD3DCB20688CA4008FA85F /* XCBaseDataManager.m */,
-				56FD3DC620688CA3008FA85F /* XCFMDBManager.h */,
-				56FD3DCA20688CA4008FA85F /* XCFMDBManager.m */,
+				564514FA2071D0AA00A42957 /* XCBaseData.h */,
+				564514F62071D0A900A42957 /* XCBaseData.m */,
+				564514F92071D0AA00A42957 /* XCBaseDataManager.h */,
+				564514F82071D0AA00A42957 /* XCBaseDataManager.m */,
+				564514FD2071D0AA00A42957 /* XCFMDB.h */,
+				564514FC2071D0AA00A42957 /* XCFMDB.m */,
+				564514FB2071D0AA00A42957 /* XCFMDBManager.h */,
+				564514F72071D0A900A42957 /* XCFMDBManager.m */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -567,7 +579,6 @@
 				56FD3DF420688FE8008FA85F /* GoogleService-Info.plist in Resources */,
 				56FD3DEA20688E63008FA85F /* XCSubscriptionView.xib in Resources */,
 				569E287E205F568C00B0D01C /* Main.storyboard in Resources */,
-				56FD3DF620689119008FA85F /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,11 +664,13 @@
 				569E2886205F568C00B0D01C /* main.m in Sources */,
 				569E28BB205FE12300B0D01C /* XCHomeViewController.m in Sources */,
 				56FD3DD320688D09008FA85F /* XCBaseNetworkManager.m in Sources */,
-				56FD3DCC20688CA4008FA85F /* XCBaseData.m in Sources */,
+				564514FE2071D0AA00A42957 /* XCBaseData.m in Sources */,
 				569E28C5205FE6D700B0D01C /* XCDevice.m in Sources */,
+				564515012071D0AA00A42957 /* XCFMDB.m in Sources */,
 				569E28D5205FEE5F00B0D01C /* UIViewController+XCSwizzling.m in Sources */,
 				569E28B8205FE10D00B0D01C /* XCBaseNacigationController.m in Sources */,
 				56FD3DDE20688D23008FA85F /* XCWallpaperCategoryModel.m in Sources */,
+				564515042071D16200A42957 /* XCDailyPhotoModel.m in Sources */,
 				569E28CD205FEB9C00B0D01C /* NSString+XCExtension.m in Sources */,
 				569E28DE2060A22E00B0D01C /* UIView+XCExtension.m in Sources */,
 				56FD3DE320688E02008FA85F /* XCKeychainManager.m in Sources */,
@@ -666,14 +679,15 @@
 				569E28D8205FF1A800B0D01C /* UIImage+XCExtension.m in Sources */,
 				569E28B5205FE0EF00B0D01C /* XCBaseViewController.m in Sources */,
 				56FD3DD420688D09008FA85F /* XCBaseNetwork.m in Sources */,
-				56FD3DCE20688CA4008FA85F /* XCBaseDataManager.m in Sources */,
 				569E28C9205FEAEE00B0D01C /* UIColor+XCExtension.m in Sources */,
+				564515072071D1A900A42957 /* XCBaseNetworkManager+Extension.m in Sources */,
 				56FD3DDC20688D23008FA85F /* XCPhotoModel.m in Sources */,
 				569E28D0205FEBEB00B0D01C /* UIViewController+XCBackButtonHandler.m in Sources */,
+				564515002071D0AA00A42957 /* XCBaseDataManager.m in Sources */,
 				56FD3DEB20688E63008FA85F /* XCSubscriptionView.m in Sources */,
 				569E28DB20609FE100B0D01C /* UINavigationBar+XCSwizzling.m in Sources */,
+				564514FF2071D0AA00A42957 /* XCFMDBManager.m in Sources */,
 				56FD3DA820661F9F008FA85F /* XCKeychain.m in Sources */,
-				56FD3DCD20688CA4008FA85F /* XCFMDBManager.m in Sources */,
 				569E2878205F568C00B0D01C /* AppDelegate.m in Sources */,
 				56FD3DE420688E02008FA85F /* XCIAPManager.m in Sources */,
 			);
